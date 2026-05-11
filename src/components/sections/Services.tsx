@@ -29,7 +29,7 @@ export const Services = () => {
           <span className="text-gold-600 font-semibold tracking-wide text-sm uppercase mb-4 block">
             Nossos Serviços
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-900 mb-6 tracking-tight leading-tight">
+          <h2 className="text-[45px] font-bold text-brand-900 mb-6 tracking-tight leading-tight">
             Cuidado 360º para a vida do seu pet.
           </h2>
           <p className="text-lg text-brand-900/70">

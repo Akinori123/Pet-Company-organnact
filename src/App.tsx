@@ -12,6 +12,7 @@ import { ImpactNumbers } from "./components/sections/ImpactNumbers";
 import { Mission } from "./components/sections/Mission";
 import { Services } from "./components/sections/Services";
 import { Team } from "./components/sections/Team";
+import { Products } from "./components/sections/Products";
 import { Gallery } from "./components/sections/Gallery";
 import { Testimonials } from "./components/sections/Testimonials";
 import { Contact } from "./components/sections/Contact";
@@ -30,6 +31,7 @@ function HomePage() {
         <Mission />
         <Services />
         <Team />
+        <Products />
         <Gallery />
         <Testimonials />
         <FAQ />
