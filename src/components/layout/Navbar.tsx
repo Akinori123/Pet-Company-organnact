@@ -4,6 +4,7 @@ import { Menu, X, Phone, Instagram } from "lucide-react";
 import { Button } from "../ui/Button";
 import { APP_DATA } from "@/src/lib/mockData";
 import { cn } from "@/src/lib/utils";
+import logoImage from "../../assets/images/logo.png";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +38,7 @@ export const Navbar = () => {
           {/* Logo */}
           <a href="/" className="flex-shrink-0 flex items-center">
             <img 
-              src="/images/logo.png" 
+              src={logoImage} 
               alt="Organnact" 
               className="h-10 w-auto object-contain" 
             />

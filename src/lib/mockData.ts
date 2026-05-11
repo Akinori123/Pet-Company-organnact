@@ -1,7 +1,7 @@
-const foto1 = "/images/foto1.png";
-const foto2 = "/images/foto2.png";
-const foto3 = "/images/foto3.png";
-const foto4 = "/images/foto4.png";
+import foto1 from "../assets/images/foto1.png";
+import foto2 from "../assets/images/foto2.png";
+import foto3 from "../assets/images/foto3.png";
+import foto4 from "../assets/images/foto4.png";
 
 /**
  * Mock data structured for the application.
