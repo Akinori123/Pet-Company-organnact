@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/Button";
 import { APP_DATA } from "@/src/lib/mockData";
+import { LocationSelectModal } from "../ui/LocationSelectModal";
 
 export const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden bg-brand-900 pt-20">
       {/* Background Image with Overlay */}
@@ -35,11 +38,14 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#contato">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 font-semibold">
-                Agendar Consulta <ArrowRight className="h-5 w-5" />
-              </Button>
-            </a>
+            <Button 
+              onClick={() => setIsModalOpen(true)}
+              size="lg" 
+              variant="secondary" 
+              className="w-full sm:w-auto gap-2 font-semibold"
+            >
+              Agendar Consulta <ArrowRight className="h-5 w-5" />
+            </Button>
             <a href="#servicos">
               <Button size="lg" variant="outline" className="w-full sm:w-auto text-white border-white/20 hover:bg-white/10">
                 Conheça nossos serviços
@@ -48,6 +54,11 @@ export const Hero = () => {
           </div>
         </motion.div>
       </div>
+
+      <LocationSelectModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };
