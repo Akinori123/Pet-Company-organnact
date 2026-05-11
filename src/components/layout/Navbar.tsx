@@ -37,7 +37,7 @@ export const Navbar = () => {
           {/* Logo */}
           <a href="/" className="flex-shrink-0 flex items-center">
             <img 
-              src="/src/assets/images/logo.png" 
+              src="/images/logo.png" 
               alt="Organnact" 
               className="h-10 w-auto object-contain" 
             />
