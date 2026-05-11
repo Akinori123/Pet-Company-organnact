@@ -13,6 +13,13 @@
   --animate-sonar-1: sonar 2s linear infinite;
   --animate-sonar-2: sonar 2s linear infinite 0.6s;
   --animate-sonar-3: sonar 2s linear infinite 1.2s;
+  
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
 
   @keyframes sonar {
     0% {

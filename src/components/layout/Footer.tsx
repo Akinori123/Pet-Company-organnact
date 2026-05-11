@@ -79,12 +79,24 @@ export const Footer = () => {
             <h4 className="text-white font-semibold mb-6">Como Chegar</h4>
             <div className="space-y-3">
               <a href={APP_DATA.mapsLink} target="_blank" rel="noreferrer" className="block w-full">
-                <Button variant="secondary" className="w-full text-brand-900 justify-start px-5 font-semibold">
+                <Button 
+                  className="w-full text-white justify-start pl-[20px] pr-5 text-[15px] font-semibold border-none hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#68bb70' }}
+                >
+                  <svg className="w-5 h-5 mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/>
+                  </svg>
                   Traçar rota no Google Maps
                 </Button>
               </a>
               <a href={APP_DATA.wazeLink} target="_blank" rel="noreferrer" className="block w-full">
-                <Button variant="outline" className="w-full border-brand-100/20 text-white hover:bg-brand-100/10 justify-start px-5">
+                <Button 
+                  className="w-full text-white justify-start pl-[20px] pr-5 text-[15px] font-semibold border-none hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#4d8ebc' }}
+                >
+                  <svg className="w-5 h-5 mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.96,4C7.03,4,3,7.66,3,12.2c0,1.3,0.36,2.54,0.99,3.64l-1.63,3.31c-0.19,0.39,0.1,0.85,0.53,0.85h3.69c1.58,0.85,3.41,1.35,5.38,1.35c4.93,0,8.96-3.66,8.96-8.2S16.89,4,11.96,4z M8.5,10.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S9.33,10.5,8.5,10.5z M15.5,10.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S16.33,10.5,15.5,10.5z M15.5,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S16.33,13.5,15.5,13.5z"/>
+                  </svg>
                   Traçar rota no Waze
                 </Button>
               </a>

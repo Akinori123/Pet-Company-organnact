@@ -13,6 +13,7 @@ import { Mission } from "./components/sections/Mission";
 import { Services } from "./components/sections/Services";
 import { Team } from "./components/sections/Team";
 import { Gallery } from "./components/sections/Gallery";
+import { Testimonials } from "./components/sections/Testimonials";
 import { Contact } from "./components/sections/Contact";
 import { FAQ } from "./components/sections/FAQ";
 import { WhatsAppBot } from "./components/features/WhatsAppBot";
@@ -30,6 +31,7 @@ function HomePage() {
         <Services />
         <Team />
         <Gallery />
+        <Testimonials />
         <FAQ />
         <Contact />
       </main>
