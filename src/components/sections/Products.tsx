@@ -61,7 +61,7 @@ export const Products = () => {
 
             return (
             <div key={product.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
-              <div className="relative aspect-square overflow-hidden bg-brand-100">
+              <div className="relative aspect-square overflow-hidden bg-white">
                 <img 
                   src={product.image} 
                   alt={product.name}
