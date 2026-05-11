@@ -1,0 +1,45 @@
+{
+  "project": "Organnact Landing Page",
+  "structure": {
+    "src": {
+      "assets": {
+        "images": "Placeholder images and logos"
+      },
+      "components": {
+        "layout": {
+          "Navbar.tsx": "Global navigation bar with smooth scroll links.",
+          "Footer.tsx": "4-column footer with map links, schedule, and social."
+        },
+        "sections": {
+          "Hero.tsx": "Main impactful section above the fold.",
+          "ImpactNumbers.tsx": "Social proof numbers banner.",
+          "Mission.tsx": "Company purpose and values.",
+          "Services.tsx": "Grid of services (Vet, Pet Shop, Grooming).",
+          "Team.tsx": "Team presentation and Authority Card.",
+          "Gallery.tsx": "Our structure with hover effects.",
+          "Contact.tsx": "Lead form and detailed contact info.",
+          "FAQ.tsx": "Frequently Asked Questions accordion."
+        },
+        "ui": {
+          "Button.tsx": "Reusable button component (Apple aesthetic).",
+          "Card.tsx": "Reusable card component for services and team.",
+          "Input.tsx": "Form inputs with validation.",
+          "Accordion.tsx": "Interactive elements for FAQ."
+        },
+        "features": {
+          "WhatsAppBot.tsx": "Automated chatbot mock guiding to WhatsApp."
+        }
+      },
+      "lib": {
+        "utils.ts": "Utility functions like class merging (clsx/tailwind-merge).",
+        "mockData.ts": "Structured JSON output for page content and SEO strings."
+      },
+      "hooks": {
+        "useScroll.ts": "Custom hook for handling smooth scroll and active sections."
+      },
+      "App.tsx": "Main assembly of all sections.",
+      "main.tsx": "React entry point.",
+      "index.css": "Tailwind entry point and global styles (Apple typography)."
+    }
+  }
+}

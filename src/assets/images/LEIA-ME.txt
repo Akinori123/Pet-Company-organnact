@@ -1,0 +1,8 @@
+Este diretório foi criado para você fazer upload de suas imagens e logotipos personalizados.
+Você pode arrastar e soltar imagens nesta pasta através do explorador de arquivos ao lado.
+
+Depois de enviadas, você pode acessá-las no código assim:
+import myLogo from "../../assets/images/minha-logo.png"
+
+Ou usando diretamente a tag img:
+<img src="/src/assets/images/minha-logo.png" alt="Logo" />
