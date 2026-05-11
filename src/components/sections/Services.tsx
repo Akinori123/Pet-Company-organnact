@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { APP_DATA } from "@/src/lib/mockData";
 import { motion } from "motion/react";
 import { Card } from "../ui/Card";
 import { Stethoscope, ShoppingBag, Scissors, ArrowRight } from "lucide-react";
+import { LocationSelectModal } from "../ui/LocationSelectModal";
 
 // Helper map to convert string from APP_DATA to Actual Icon Component
 const IconMap: Record<string, React.ElementType> = {
@@ -12,6 +13,14 @@ const IconMap: Record<string, React.ElementType> = {
 };
 
 export const Services = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState<string | undefined>();
+
+  const handleOpenModal = (serviceTitle: string) => {
+    setSelectedService(serviceTitle);
+    setIsModalOpen(true);
+  };
+
   return (
     <section id="servicos" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,9 +62,15 @@ export const Services = () => {
                       {service.description}
                     </p>
                   </div>
-                  <a href={`#${service.id}`} className="inline-flex items-center text-sm font-semibold text-brand-900 hover:text-gold-600 transition-colors mt-auto">
-                    Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  <button 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleOpenModal(service.title);
+                    }}
+                    className="inline-flex items-center text-sm font-semibold text-brand-900 hover:text-gold-600 transition-colors mt-auto text-left"
+                  >
+                    Agendar via WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
+                  </button>
                 </Card>
               </motion.div>
             );
@@ -63,6 +78,12 @@ export const Services = () => {
         </div>
 
       </div>
+      
+      <LocationSelectModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        serviceTitle={selectedService}
+      />
     </section>
   );
 };
